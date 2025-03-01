@@ -1,0 +1,12 @@
+[versions]
+flink = "1.20.1"
+
+[libraries]
+flink-clients = {module= "org.apache.flink:flink-clients", version.ref = "flink"}
+flink-streaming-java = {module= "org.apache.flink:flink-streaming-java", version.ref = "flink"}
+flink-table-common = {module= "org.apache.flink:flink-table-common", version.ref = "flink"}
+
+[bundles]
+flink = ["flink-clients", "flink-streaming-java", "flink-table-common"]
+
+[plugins]
